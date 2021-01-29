@@ -11,5 +11,4 @@ class COVIDLib {
     double covidChanceDurree(NormalDistribution n, int a, int b) {
         return n.probability(a, b);
     }
-
 }
