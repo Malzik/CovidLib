@@ -14,7 +14,7 @@ pipeline {
         }
         stage ('Test') {
             steps {
-                sh 'make check || true'
+                sh 'make clean && ./configure --with-option=/path/etc && make && make install'
             }
             post {
                 success {
